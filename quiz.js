@@ -82,12 +82,11 @@ let questions = [{
     choiceD: "Matteo",
     correctAnswer: "B"
 }, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kereru.jpg",
-    choiceA: "Kiwi",
-    choiceB: "New Zealand Pigeon/Kererū",
-    choiceC: "Kingfisher/Kōtare",
-    choiceD: "Eastern Bar-Tailed Godwit/Kuaka",
+    question: "Was ist Lucis Lieblingsmarke für Gaming?",
+    choiceA: "Logitech",
+    choiceB: "Dell",
+    choiceC: "Predator",
+    choiceD: "Glorius",
     correctAnswer: "B"
 }, ];
 
@@ -124,16 +123,16 @@ function beginQuiz() {
 function showScore() {
     quiz.style.display = "none";
     scoreBlock.style.display = "block";
-    scoreBlock.innerHTML = "<p> You scored " + score + " out of 10!</p>";
+    scoreBlock.innerHTML = "<p> Du hast " + score + " von 10!</p>";
 
     if (score < 4) {
-        scoreMessage.innerHTML = "<p>Not so good! Time for some revision.</p>";
+        scoreMessage.innerHTML = "<p>Das war nicht so gut, wenn du es noch mal machst wird es bestimmt besser.</p>";
     }
     else if (score < 8) {
-        scoreMessage.innerHTML = "<p>Pretty good! But still room for improvement.</p>"
+        scoreMessage.innerHTML = "<p>Ziemlich gut, aber ein paar Sachen fehlten noch.</p>"
     }
     else {
-        scoreMessage.innerHTML = "<p>Great work! You really know your birds!</p>"
+        scoreMessage.innerHTML = "<p>Gut gemacht! Deine Familie kennst du echt gut und jetzt frohe Weihnachten!</p>"
     }
     scoreMessage.style.display = "block";
     quizAgain.style.display = "block";
